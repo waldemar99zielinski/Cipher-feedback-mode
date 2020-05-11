@@ -70,14 +70,16 @@ int main(int argc, char *argv[])
         lenght = strlen(text);
         
         decryptv2(keyCopy, vectCopy, text, lenght);
-
-        printf("decrypted: %s\n",textCopy );
+        //decrypt(keyCopy, vectCopy, text);
+        printf("decrypted: %s\n",text );
         
     }else if(action == 'd'){
         
-        decrypt(key, vect, text);
+        int lenght = strlen(text);
 
-        printf("text:%s\n",text );
+        decryptv2(key, vect, text, lenght);
+
+        printf("text:%s, %d\n",text, lenght );
     }
     
 	

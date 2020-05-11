@@ -18,10 +18,10 @@ keyXORvect:
     mov [rsi], r9d ; save vector
    
 
-vectXORplainText:
+vectXORcipherText:
     mov r9d, [rsi] ;load vector
-    mov r11d, r9d ; copy vector
     mov r10d, [rdx]; load text
+    mov r11d, r10d ; copy text
 
     xor r9d, r10d ;xor text vector
 
